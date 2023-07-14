@@ -1,7 +1,15 @@
+import logging 
+import os
+from datetime import datetime
 
-import logging as lg
+LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+logs_path=os.path.join(os.getcwd(),"logs",LOG_FILE)
+os.makedirs(logs_path,exist_ok=True)
 
-lg.basicConfig(filename="proj.log",level=lg.INFO)
+LOG_FILE_PATH=os.path.join(logs_path,LOG_FILE)
 
-lg.info("Hello logger file run successfully")
-print("DONE")
+logging.basicConfig(
+    filename=LOG_FILE_PATH,
+    format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO
+)
