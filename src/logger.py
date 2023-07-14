@@ -1,6 +1,7 @@
 
-def NEW(a):
-    if 2<=a<=5:
-        print("A is in range ")
-    else:
-        print("A not found")
+import logging as lg
+
+lg.basicConfig(filename="proj.log",level=lg.INFO)
+
+lg.info("Hello logger file run successfully")
+print("DONE")
