@@ -49,12 +49,6 @@ class DataIngestion:
         
 
 
-if __name__=="__main__":
-    obj=DataIngestion()
-    train_data,test_data=obj.initiate_data_ingestion()
-    data_tranformation=DataTransformation()
-    train_arr,test_arr,obj_file_path=data_tranformation.initiate_data_trans(train_data,test_data)
-
 
 
             
