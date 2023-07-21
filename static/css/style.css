@@ -38,8 +38,17 @@ label {
 }
 
 /* Add background image (diamond.jpg) */
+ /* body{
+    background-image: url("{{ url_for('static', filename='images/diamond.jpg') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+ */
+/* style.css */
 body {
-    background-image: url("{{ url_for('static', filename='/static/images/diamond.jpg') }}");
+    background-image: url("/images/diamond.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
