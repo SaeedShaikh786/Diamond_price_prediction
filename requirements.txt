@@ -1,5 +1,6 @@
 pandas 
 numpy
 scikit-learn
-Flask==2.1.0
--e .
+Flask
+seaborn
+#-e .
