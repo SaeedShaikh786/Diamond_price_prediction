@@ -1,3 +1,16 @@
-<h1> Welcome to Data science project </h1>
 
-<h1> This is my Gemstone Price prediction project </h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1> This is my Gemstone Price prediction project </h1>
+        <h2> To get the predicted price of diamond please hit the below button to enter all the values</h2>
+        <!-- Add the button that redirects to the "predict" page -->
+        <a href="/predict" class="button">Predict</a>
+    </div>
+</body>
+</html>

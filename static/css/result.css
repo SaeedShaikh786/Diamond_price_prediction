@@ -1,0 +1,32 @@
+/* Style for the result page */
+
+
+
+/* Style for the result page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the result container fill the entire viewport height */
+    background-color: rgba(240, 248, 255, 0.7); /* Semi-transparent light sky blue background */
+    font-weight: bold;
+    color: white;
+}
+
+.result-container {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Add background image (diamond.jpg) */
+body {
+    background-image: url("../images/diamond2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}

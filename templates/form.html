@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
 <body>
+  <div class="form-container">
+    <h2>Enter the Data for Diamond Price</h2>
 <form action="{{url_for('Predict')}}" method="POST">
     <div class="form-group">
         <label for="carat">Carat:</label>
@@ -75,6 +77,7 @@
 
 <div style="clear:both;"></div>
   <input type="submit" value="Submit">
+</div>
 </form>
 </body>
 </html>

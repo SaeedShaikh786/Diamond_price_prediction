@@ -1,0 +1,48 @@
+/* Apply a background image that covers the whole page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/diamond2.jpg"); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the container */
+.container {
+    text-align: center;
+}
+
+/* Style for the title */
+h1 {
+    color: white; /* Set the title color */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white; /* Set the next h2 color */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Style for the predict button */
+.button {
+    background-color: #134c88; /* Blue background color */
+    color: rgb(252, 245, 245); /* Black text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none; /* Remove underline from the anchor element */
+}
+
+/* Apply hover effect for the predict button */
+.button:hover {
+    background-color: #0c4179; /* Darker shade of blue on hover */
+}

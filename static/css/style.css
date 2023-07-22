@@ -1,13 +1,26 @@
-/* style.css */
+/* Style for the form fields */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: lightskyblue; /* Set the background color to light sky blue */
+}
 
 /* Style for the form container (center the form) */
 .form-container {
     max-width: 400px;
+    width: 50%; /* Set the width to 50% to make it medium-sized */
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #f0f8ff; /* Light sky blue background color */
+    text-align: center; /* Center the content horizontally */
 }
 
 /* Style for the form fields */
@@ -15,7 +28,7 @@ input[type="text"],
 input[type="number"],
 select {
     width: 100%;
-    padding: 10px;
+    padding: 5px; /* Adjust the padding to make the boxes smaller */
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -38,17 +51,8 @@ label {
 }
 
 /* Add background image (diamond.jpg) */
- /* body{
-    background-image: url("{{ url_for('static', filename='images/diamond.jpg') }}");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
- */
-/* style.css */
 body {
-    background-image: url("/images/diamond.jpg");
+    background-image: url("../images/diamond2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
